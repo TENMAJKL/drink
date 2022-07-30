@@ -16,7 +16,7 @@ fn notify() {
 fn notify_macos() {
     Command::new("osascript")
         .arg("-e")
-        .arg("display notification \"Time to drink!\"")
+        .arg("display alert \"Time to drink!\"")
         .spawn()
         .expect("Failed to show notification")
     ;
